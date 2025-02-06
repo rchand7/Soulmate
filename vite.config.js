@@ -4,19 +4,17 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 5173, // Explicitly setting the port
-    host: '0.0.0.0' // Ensuring it's accessible from Render
+    host: true,  // Allows access from external networks
+    port: 5173,  // Ensures it runs on a fixed port (Render may override)
+    strictPort: true,
+    allowedHosts: 'all',  // Allows all hosts (Fixes blocked request issue)
+    cors: true
+  },
+  preview: {
+    host: true,
+    port: 10000  // Set a fixed preview port
   },
   build: {
-    chunkSizeWarningLimit: 1000, // Suppressing large chunk warning
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            return 'vendor'; // Code-splitting for optimization
-          }
-        }
-      }
-    }
+    chunkSizeWarningLimit: 1600 // Increases chunk limit to avoid warnings
   }
 });
