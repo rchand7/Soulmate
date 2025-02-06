@@ -180,7 +180,7 @@ const EditBiodata = () => {
                     <label htmlFor="permanentDivision" className="block mb-2">Permanent Division</label>
                     <select name="permanentDivision" id="permanentDivision" className="w-full border rounded py-2 px-3" onChange={handleChange} required>
                         <option value="">Select Permanent Division</option>
-                        <option value="Dhaka">Dhaka</option>
+                        <option value="Delhi">Delhi</option>
                         <option value="Chattogram">Chattogram</option>
                         <option value="Rangpur">Rangpur</option>
                         <option value="Barisal">Barisal</option>
@@ -194,7 +194,7 @@ const EditBiodata = () => {
                     <label htmlFor="presentDivision" className="block mb-2">Present Division</label>
                     <select name="presentDivision" id="presentDivision" className="w-full border rounded py-2 px-3" onChange={handleChange}required>
                         <option value="">Select Present Division</option>
-                        <option value="Dhaka">Dhaka</option>
+                        <option value="Delhi">Delhi</option>
                         <option value="Chattogram">Chattogram</option>
                         <option value="Rangpur">Rangpur</option>
                         <option value="Barisal">Barisal</option>

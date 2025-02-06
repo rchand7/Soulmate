@@ -37,15 +37,15 @@ const ContactUs = () => {
                                 <Title level={3} className="text-blue-700">Contact Information</Title>
                                 <Paragraph>
                                     <EnvironmentOutlined className="text-blue-700 mr-2" />
-                                    <span className="font-bold">Address:</span> 5/25/Ga Outer Stadium, Mymensingh, Bangladesh.
+                                    <span className="font-bold">Address:</span> Greater Noida, G.B. Nagar, U.P.
                                 </Paragraph>
                                 <Paragraph>
                                     <PhoneOutlined className="text-blue-700 mr-2" />
-                                    <span className="font-bold">Contact Number:</span> +880 9613-820303
+                                    <span className="font-bold">Contact Number:</span> +91 8076708261
                                 </Paragraph>
                                 <Paragraph>
                                     <MailOutlined className="text-blue-700 mr-2" />
-                                    <span className="font-bold">Email:</span> <a href="mailto:support@soulconnect.com" className="text-blue-700">support@soulconnect.com</a>
+                                    <span className="font-bold">Email:</span> <a href="thakurarjun5956@gmail.com" className="text-blue-700">thakurarjun5956.com</a>
                                 </Paragraph>
                             </div>
                         </div>

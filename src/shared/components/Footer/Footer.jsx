@@ -6,14 +6,14 @@ const Footer = () => {
         <div className="bg-gray-900 text-white mt-24">
             <div className="container mx-auto">
                 <div className="flex justify-center items-center -translate-y-8">
-                    <h3 className="bg-blue-600 w-fit p-6 rounded-xl">Free support: +880 178 698 004   |   Email: md.sabbiralmamon@gmail.com</h3>
+                    <h3 className="bg-blue-600 w-fit p-6 rounded-xl">Free support: +91 8076708261   |   Email: thakurarjun5956@gmail.com</h3>
                 </div>
                 <div className="flex justify-evenly gap-8 text-center items-center lg:items-start lg:text-start flex-col lg:flex-row">
                     <div>
                         <h2 className="mb-4 font-bold text-xl">Get in touch</h2>
-                        <p>Address: 49 Mohakhali, Dhaka-1212</p>
-                        <p>Phone: +880 1798 698 004</p>
-                        <p>Email: md.sabbiralmamon@gmail.com</p>
+                        <p>Address: Greater Noida, U.P</p>
+                        <p>Phone: +91 8076708261</p>
+                        <p>Email: thakurarjun5956@gmail.com</p>
                     </div>
                     <div>
                         <h2 className="mb-4 font-bold text-xl">Help and Support</h2>
