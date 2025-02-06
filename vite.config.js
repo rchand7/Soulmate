@@ -4,12 +4,19 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 5173, // Ensures a fixed port
-    strictPort: true, // Prevents fallback to another port
-    host: 'localhost' // Ensures accessibility
+    port: 5173, // Explicitly setting the port
+    host: '0.0.0.0' // Ensuring it's accessible from Render
   },
   build: {
-    outDir: 'dist',
-    sourcemap: true // Helps with debugging
+    chunkSizeWarningLimit: 1000, // Suppressing large chunk warning
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor'; // Code-splitting for optimization
+          }
+        }
+      }
+    }
   }
 });
